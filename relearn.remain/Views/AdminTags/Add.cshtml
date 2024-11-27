@@ -1,0 +1,25 @@
+@model relearn.remain.Models.ViewModels.AddTagRequest
+@{
+}
+
+<div>
+	<p>Add Tag</p>
+</div>
+
+<div class="container py-5">
+	<form method="post">
+			<div class="mb-3">
+				<label class="form-label">Name</label>
+				<input type="text" class="form-control" id="name" asp-for="Name" />
+			</div>
+
+		<div class="mb-3">
+			<label class="form-label">Display Name</label>
+			<input type="text" class="form-control" id="displayName" asp-for="DisplayName" />
+		</div>
+
+		<div class="mb-3">
+			<button type="submit" class="btn btn-dark">submit</button>
+		</div>
+	</form>
+</div>
